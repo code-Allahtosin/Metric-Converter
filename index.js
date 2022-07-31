@@ -24,11 +24,13 @@ convertBtn.addEventListener('click', function(){
     volume.textContent= `${input} liters = ${gallon} gallons | ${input} gallons = ${liter} liters`
     mass.textContent= `${input} kilos = ${pound} pounds | ${input} pounds = ${kilogram} kilos`
     document.getElementById('input').value=''
+    document.getElementById('input').placeholder=input
   } else {
     length.textContent= `1 meter = 3.281 feet | 1 foot = 0.375 meter`
     volume.textContent= `1 liter = 0.264 gallon | ${1} gallon = 3.788 liters`
     mass.textContent= `1 kilo = 2.204 pounds | ${1} pound = 0.454 kilos`
     document.getElementById('input').value=''
+    document.getElementById('input').placeholder="00"
   } 
 })
     

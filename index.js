@@ -7,6 +7,7 @@ const convertBtn=   document.getElementById('convert-btn')
 const length=       document.getElementById('length')
 const volume=       document.getElementById('volume')
 const mass=         document.getElementById('mass')
+const styleLink = document.getElementById('style');
 
 
 convertBtn.addEventListener('click', function(){
@@ -33,5 +34,26 @@ convertBtn.addEventListener('click', function(){
     document.getElementById('input').placeholder="00"
   } 
 })
-    
+
+document.getElementById('dark-mode').addEventListener('click', function(){
+ 
+  if (styleLink.getAttribute('href')=='indexDark.css'){
+  styleLink.setAttribute('href', 'index.css'); 
+  localStorage.clear()
+  localStorage.setItem('mode', 'light')
+
+} else{
+  styleLink.setAttribute('href', 'indexDark.css'); 
+  localStorage.clear()
+  localStorage.setItem('mode', 'dark')
+
+}
+})
+
+if (localStorage.getItem('mode')=='dark'){
+  styleLink.setAttribute('href', 'indexDark.css'); 
+}else{
+  styleLink.setAttribute('href', 'index.css'); 
+}
+ 
     

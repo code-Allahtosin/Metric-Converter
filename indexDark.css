@@ -3,7 +3,7 @@ body {
     padding: 0 10px;
     text-align: center;
     font-family: 'Inter';
-    background: #F4F4F4;
+    background: #1F2937;
 }
 
 .upper-bdy{
@@ -102,7 +102,7 @@ input{
     width: 500px;
     height: 110px;
     margin: 20px auto;
-    background: #FFFFFF;
+    background: #273549;
     border-radius: 5px 0px 0px 0px;
 }
 .unit-header{
@@ -111,15 +111,14 @@ input{
     font-size: 20px;
     line-height: 20px;
     text-align: center;
-    color: #5A537B;
+    color: #CCC1FF;
 }
 .main-conv{
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
     text-align: center;
-    color: #353535;
-    ;
+    color: #FFFFFF;
 }
 
 footer{
